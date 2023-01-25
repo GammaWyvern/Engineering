@@ -9,7 +9,7 @@ import static edu.gvsu.dlunit.DLUnit.*;
  * re-name this class and add more tests!
  * Created by kurmasz on 8/8/16.
  */
-public class SampleUnsigned16BitAdderTest {
+public class Unsigned16BitAdderTest {
 
   //
   // Quick tests designed to quickly catch major errors.  (Also serve as example tests)
@@ -69,7 +69,7 @@ public class SampleUnsigned16BitAdderTest {
 
   // The complete list of integers to be tests.
   // (IMPORTANT:  !!! You need to add to this list !!!)
-  private static final long testIntegers[] = {0, 1, 2, 13, 127, 128, 129, 0xAAAA, 65534, 65535};
+  private static final long testIntegers[] = {0, 1, 2, 13, 127, 128, 129, 400, 1000, 65536/2, 0xAAAA, 65534, 65535};
 
   protected void verify(long a, long b, boolean carryIn) {
 
