@@ -1,0 +1,18 @@
+Total things:
+HA = 2
+FA = HA + HA + 1 (= 5)
+4bit = FA + FA + FA + FA (= 20)
+---------------------------
+
+Critical Path length:
+HA = 1
+FA = HA + HA + 1 (= 3)
+4bit = FA + FA + FA + FA (= 12)
+
+
+My full adder 
+3 crit path
+
+12
+13
+23
