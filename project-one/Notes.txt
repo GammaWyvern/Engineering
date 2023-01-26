@@ -2,11 +2,18 @@ Total things:
 HA = 2
 FA = HA + HA + 1 (= 5)
 4bit = FA + FA + FA + FA (= 20)
-u16 = 4bit + 4bit + 4bit + 4bit + 2 (= 82)
+u16 = 4bit + 4bit + 4bit + 4bit + 2 (= 82) WRONG
 ---------------------------
 
 Critical Path length:
 HA = 1
 FA = HA + HA + 1 (= 3)
 4bit = FA + FA + FA + FA (= 12)
-u16 = 4bit + 4bit + 4bit + 4bit + 1 (= 49)
+u16 = 4bit + 4bit + 4bit + 4bit + 1 (= 49) WRONG
+
+---------------------------
+TO DO next:
+Write out truth table for overflow logic and simplify circuitry
+Clean up the disgusting mess that is my circuit right now
+Update critical paths (only need to change for u16 right now b/c overflow)
+Add ripple carry????
