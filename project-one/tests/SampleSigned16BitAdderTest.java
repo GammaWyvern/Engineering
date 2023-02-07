@@ -13,7 +13,13 @@ public class SampleSigned16BitAdderTest {
 
   // The complete list of integers to be tests.
   // (IMPORTANT !!! You need to add to this list !!!)
-  public static final long testIntegers[] = {-32768, -32767, 0, 1, 2, 13, 127, 128, 129, 0x5555, 32766, 32767};
+  public static final long testIntegers[] = {
+	  -32768, -32767, 32766, 32767, 
+	  -2, -1, 0, 1, 2,
+	  13, 127, 128, 129,
+	  -13, -127, -128, -129,
+	  8374, 0x5555, 23123
+  };
 
 
   // Helper method that runs a test for a given pair of integers and a carryIn.
