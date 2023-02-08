@@ -1,4 +1,13 @@
 ## Total Number Of Gates:
+* FullAdder = 5
+* Multiplexer = 4
+* OverflowDetector = 5
+* 4bit-Ripple = (FullAdder * 4) = 20 
+* 4bit-CarrySelect = (4bit-Ripple * 2) + (Multiplexer * 5) = 40 + 20 = 60 
+* Signed-Adder = (4bit-CarrySelect * 4) + OverflowDetector = 240 + 5 = 245
+
+Altogether:
+* Our SignedAdder_16bit.jls has 245 gates
 
 ## Crital Path Timing
 * The data goes immediately from InputA/B to each Carry Select Adder, to
