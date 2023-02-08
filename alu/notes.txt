@@ -1,2 +1,0 @@
-Need to recalculate number of gates and crit path
-
