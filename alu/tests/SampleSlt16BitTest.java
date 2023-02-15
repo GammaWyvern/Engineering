@@ -86,4 +86,37 @@ public class SampleSlt16BitTest {
   public void one_zero_unsigned() {
     verify(1, 0, false);
   }
+
+
+  // Larger scale error catching
+  private int[] signedNums = {
+	  -32768, 32767, -1, 0, 1,
+	  -30000, 30000,
+	  452, -827, -64, 64
+  };
+
+  private int[] unsignedNums = {
+	0, 64, 7248, 128,
+	65535, 65534,
+	30000, 50000, 
+  };
+
+  @Test
+  public void many_signed_tests() {
+	  for(int num_one : signedNums) {
+	  	for(int num_two : signedNums) {
+			verify(num_one, num_two, true);
+		}
+	  }
+  }
+
+  @Test
+  public void many_unsigned_tests() {
+	  for(int num_one : unsignedNums) {
+	  	for(int num_two : unsignedNums) {
+			verify(num_one, num_two, false);
+	 	}
+	  }
+  }
+
 }
