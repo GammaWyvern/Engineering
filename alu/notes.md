@@ -20,4 +20,4 @@ Altogether:
 
 Altogether:
 * (10) + (4*10) + (4*10) + (20) = 110
-
+* Our SignedAdder_16bit.jls has a critical path of 110
